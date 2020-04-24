@@ -1,9 +1,12 @@
 package interfac;
 
+import adminPanel.AdminLogin;
+
 import java.util.Scanner;
 
 public class ChoseOptions {
      Scanner scanner= new Scanner(System.in);
+     AdminLogin admin = new AdminLogin();
     protected void chose() {
         int choseNumber=0;
         do{
@@ -23,7 +26,7 @@ public class ChoseOptions {
                     System.out.println(" Rejestracja nowego klienta");
                     break;
                 case 4:
-                    System.out.println("Tu wyświetli się panel administratora");
+                    admin.loginAdmin();
                     break;
                 case 5:
                     System.out.println(" Exit from Van Rental Services, have a nice day");
