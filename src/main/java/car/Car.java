@@ -22,7 +22,7 @@ public class Car {
     private int carMileage;
     private String carAvailability;
 
-    private String getVinNumber() {
+    String getVinNumber() {
         return this.vinNumber;
     }
 
