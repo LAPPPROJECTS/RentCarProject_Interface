@@ -16,6 +16,11 @@ public class Customer {
     private int houseNumber;
     private int mobileNumber;
 
+    private int IDCustomer;
+
+    public int getIDCustomer() {
+        return IDCustomer;
+    }
 
     public int getUserName() {
         return userName;

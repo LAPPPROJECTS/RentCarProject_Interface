@@ -68,13 +68,15 @@ public class AddCustomer {
             if(password1Input != null && password1Input.equals(password2Input)) {
                 userPassword.appendChild(document.createTextNode(password1Input));
             }
-            if(name.matches("[A-Za-z]+")) {
+            if(lastName.matches("[A-Za-z]+")) {
                 userLastName.appendChild(document.createTextNode(lastName));
             }
             if(phoneNumber.matches("\\d{10}")) {
                 userPhoneNumber.appendChild(document.createTextNode(phoneNumber));
             }
             //TODO add email format checker
+            //TODO wyrazenia regularne ??
+
             userEmailAddress.appendChild(document.createTextNode(emailAddress));
 
 
@@ -98,10 +100,17 @@ public class AddCustomer {
 
 
 
-        } catch (ParserConfigurationException | NullPointerException | TransformerException e) {
+        } catch (ParserConfigurationException | NullPointerException | TransformerException e)  {
             e.printStackTrace();
         }
 
     }
 
 }
+//TODO Paulina       metoduy wypozyczania i zwracania aut
+
+//TODO Pawel         login do systemu  i weryfikacja maila
+
+//TODO Artur         custumerHistory metoda do obliczania ceny za wynajete auto (perday 35, a po 3 dniach taniej np o 5%)
+
+//TODO Lukasz        Baza aut w XML

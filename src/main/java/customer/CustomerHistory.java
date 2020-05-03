@@ -1,4 +1,5 @@
 package customer;
-
-public class CustomerProfitability {
+/*
+* */
+public class CustomerHistory {
 }

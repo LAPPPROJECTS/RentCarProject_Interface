@@ -22,6 +22,8 @@ public class Car {
     private int carMileage;
     private String carAvailability;
 
+    private int IDNumber;
+
     String getVinNumber() {
         return this.vinNumber;
     }
@@ -141,6 +143,7 @@ public class Car {
         this.pricePerMonthlyRent = pricePerMonthlyRent;
         this.pricePerYearRent = pricePerYearRent;
         this.carAvailability = carAvailability;
+
         
     }
 
